@@ -88,11 +88,14 @@ public class Board {
                 String s_blank = " ";
                 if (this.cell[row][col].getPtest().equals(" ")) {
                     if (i <= 9) {
-                        s_blank = i + "  ";
+                        //s_blank = i + "  ";
+                        s_blank =  "   ";
                     } else if (i <= 99) {
-                        s_blank = i + " ";
+                        //s_blank = i + " ";
+                        s_blank =  "   ";
                     } else {
-                        s_blank = i + "";
+                        //s_blank = i + "";
+                        s_blank =  "   ";
                     }
                 } else {
                     if (this.cell[row][col].getPtest().equals("H")){
@@ -101,7 +104,12 @@ public class Board {
                         s_blank = RED+this.cell[row][col].getPtest()+RESET + "  ";
                     }if (this.cell[row][col].getPtest().equals("M")){
                         s_blank = YELLOW+this.cell[row][col].getPtest()+RESET + "  ";
+                    }if (this.cell[row][col].getPtest().equals("a")){
+                        s_blank = YELLOW+this.cell[row][col].getPtest()+RESET + "  ";
+                    }if (this.cell[row][col].getPtest().equals("b")){
+                        s_blank = YELLOW+this.cell[row][col].getPtest()+RESET + "  ";
                     }
+
                 }
                 all_t_board = all_t_board + l_b + s_blank + r_b;
                 i++;

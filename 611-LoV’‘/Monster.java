@@ -1,6 +1,6 @@
 package ttt;
 
-public abstract class Monster extends Pieces{
+public abstract class Monster extends Player{
     private String Name;
     private int level;
     private int damage;

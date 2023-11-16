@@ -13,7 +13,6 @@ public class HeroTeam extends Team{
 
     private int teamsize;
     private List<Hero> list=new ArrayList<>();
-    private Queue<Hero> queue=new ArrayDeque<>();
 
     public void initTeam(int i,Hero hero){
         if (i==1){
